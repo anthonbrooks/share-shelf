@@ -3,9 +3,9 @@ class Post < ApplicationRecord
 
   # before_action :find_post, only: [:show, :edit, :update, :destroy]
 
-  #def index
-  #  @posts = Post.all.to_a
-  #end
+  def index
+    @posts = Post.all.to_a
+  end
 
   def create
     @post = Post.create(robot_params)

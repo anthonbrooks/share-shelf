@@ -1,0 +1,17 @@
+<h1>Posts:</h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Owner</th>
+    <th>Last Updated</th>
+  </tr>
+  <tr>
+    <%= @posts.each do |post| %>
+    <td><%= post.title %></td>
+    <td><%= post.author %></td>
+    <td><%# post.owner %></td>
+    <td><%= post.updated_at %></td>
+    <% end %>
+  </tr>
+</table>
